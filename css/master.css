@@ -1,4 +1,13 @@
-body {
-    background-color: #d7d7d7;
-    color: black;
+nav {
+    background-color: #4c81e4;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
