@@ -1,13 +1,38 @@
-nav {
-    background-color: #4c81e4;
-    padding: 1rem;
-    border-radius: 5px;
+/*navbar*/
+nav ul {
+    height: 50px; /* Height of the navigation bar */
+    width: 100%; /* Full width */
+    position: fixed; /* Fixed position */
+    top: 0; /* Stick to the top */  
+    /*background-color: #abbdd0;  /* Light background color */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Flexbox for layout */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    z-index: 1000; /* Ensure it stays on top of other elements */
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+nav ul li {
+    margin: 0 15px;
 }
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; /* Fancy font for portfolio */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(17, 64, 165);
+}
+
+
+
+
+
+
