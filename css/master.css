@@ -46,61 +46,83 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
+
+
+
 /* Home Section */
 .home {
-    text-align: center;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 10px;
-    height: 100vh; /* Full viewport height */
+    padding: 50px;
+    height: 50vh;
     background: linear-gradient(to bottom, #fff, #f9f9f9);
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Removed duplicate */
-    position: relative; /* To position the background logo */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.home .profile-image {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    margin-right: 15px;
+    
+}
+
+.profile-card {
+    width: 100%;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+}
+
+.profile-image {
+    width: 100%;
+    border-radius: 15px;
     object-fit: cover;
-    border: 5px solid #4f3e30;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
 
-.home .profile-image:hover {
+.profile-image:hover {
     transform: scale(1.1);
 }
 
+.home-content {
+    flex: 1; /* Take remaining space */
+    text-align: center;
+    padding: 0 20px;
+}
+
 .home h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    color: #4f3e30;
+    font-family: 'Great Vibes', cursive;
     margin-bottom: 15px;
+}
+
+.home h2{
+    font-size: 2rem;
     color: #333;
-    position: relative;
-    animation: slideInFromLeft 1s ease-out;
+    margin-bottom: 15px;
+    font-family: 'Great Vibes'; ;
 }
-
-@keyframes slideInFromLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
 .home p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #555;
-    width: 100%;
-    margin: 0;
-    text-align: center; /* Changed to center for consistency */
-    font-weight: 600;
-    line-height: 1.8;
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.6;
+    text-align: justify;
+    font-family: poppins;
+    font-weight: 700;
 }
 
 /* About Me Section */
