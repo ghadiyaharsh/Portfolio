@@ -25,7 +25,7 @@
     </nav>
 
     <!-- Home Section -->
-    <div class="home">
+    <div class="home" id="home">
         <div class="profile-container">
             <div class="profile-card">
                 <h2>Welcome to my portfolio</h2>
@@ -68,12 +68,11 @@
             <button class="skill-button">Python</button>
             <button class="skill-button">WordPress</button>
         </div>
-        <p>I'm always eager to learn new technologies and improve my skills. Currently, I'm exploring frameworks like Django and Flask for backend development.</p>
-        <p>I'm also interested in UI/UX design and enjoy creating wireframes and prototypes for web applications.</p>
-        <p>My goal is to become a full-stack developer and work on projects that make a positive impact on people's lives.</p>
-        <p>I'm also familiar with version control systems like Git and have experience working with RESTful APIs.</p>
-        <p>I'm always looking for opportunities to collaborate with other developers and designers to create innovative solutions.</p>
-        <p>Let's connect and share our knowledge!</p>
+            <p>I'm always eager to learn new technologies and improve my skills. Currently, I'm exploring frameworks like Django and Flask for backend development.</p>
+            <p>I'm also interested in UI/UX design and enjoy creating wireframes and prototypes for web applications.</p>
+            <p>My goal is to become a full-stack with python developer and work on projects that make a positive impact on people's lives.</p>
+            <p>I'm also familiar with version control systems like Git and have experience working with RESTful APIs.</p>
+            <p>I'm always looking for opportunities to collaborate with other developers and designers to create innovative solutions.</p>
     </div>
 
     <!-- Projects Section -->
@@ -105,7 +104,7 @@
     </div>
 
     <!-- Contact Section -->
-    <div class="contact" id="contact">
+    <!--<div class="contact" id="contact">
         <h2>Contact</h2>
         <p>Feel free to reach out to me on LinkedIn or send me an email.</p>
         <p>I'm always open to connecting with like-minded individuals and discussing new opportunities.</p>
@@ -119,17 +118,121 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <p class="copyright-text"></p>
+     Footer -->
+    
+       <!---<p class="copyright-text"></p>
             &copy; <span id="current-year"></span> Harsh Ghadiya. All rights reserved. | Designed and developed with <i class="fa-solid fa-heart"></i> by Harsh Ghadiya.
         </p>
 
     
         <script>
             document.getElementById('current-year').textContent = new Date().getFullYear();
-        </script>
-    </footer>
+        </script> -->
+        <footer class="ft" id="ft">
+            <div class="ft-container"></div>
+                <div class="ft-row text-center text-md-start">
+                    <!-- Logo and Details -->
+                    <div class="col-12 col-md-6 col-xl-5 text-left d-md-flex">
+                        <a href="#" class="ft-logo">
+                            <img src="https://cdn.easyfrontend.com/pictures/logos/logo.png" alt="Logo" class="img-fluid" />
+                        </a>
+                        <div class="ft-details ps-4 mt-3 mt-md-0">
+                            <h3 class="ft-heading mb-3">Six Premium WordPress Themes</h3>
+                            <p class="ft-subheading mb-0">
+                                In auctor orci vitae ipsum euismod, vitae porta metus viverra. Ut facilisis luctus interdum. Cras et
+                                facilisis odio. Etiam imperdiet tincidunt metus id luctus.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="col-12 col-md-5 offset-lg-1 offset-xl-2 text-center text-md-start mt-5 mt-md-0">
+                        <h3 class="ft-heading mb-4">Find Us On</h3>
+                        <ul class="nav ft-social d-flex justify-content-center justify-content-md-start mb-0">
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-vimeo"></i></a></li>
+                            <li><a href="#"><i class="fab fa-dropbox"></i></a></li>
+                            <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Copyright -->
+                    <div class="col-12 text-center mt-5">
+                        <p class="ft-copy mb-0 mt-md-4">
+                            Copyright Easy Frontend, All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <style>
+            .ft {
+                --text-color: rgb(50, 62, 80);
+                --bg-color: #ffffff;
+                --theme-color: rgb(13, 110, 253);
+                --card-bg: #f6f6f6;
+                --btn-bg: #00bfa5;
+
+                background-color: var(--bg-color);
+                padding: 50px 0;
+                letter-spacing: 1px;
+                font-weight: 300;
+            }
+
+            @media (min-width: 768px) {
+                .ft {
+                    padding: 80px 0;
+                }
+            }
+
+            .ft-heading {
+                font-size: 20px;
+                font-weight: 300;
+                line-height: 30px;
+                color: var(--text-color);
+            }
+
+            .ft-subheading,
+            .ft-copy {
+                font-size: 15px;
+                color: var(--text-color);
+                line-height: 23px;
+                opacity: 0.7;
+            }
+
+            .ft-social a {
+                color: var(--text-color);
+                font-size: 24px;
+                margin-right: 22px;
+                opacity: 0.6;
+                transition: opacity 0.3s ease-in-out;
+            }
+
+            .ft-social li:last-child a {
+                margin-right: 0;
+            }
+
+            .ft-social a:hover {
+                color: rgba(0, 0, 0, 0.9) !important;
+                opacity: 1;
+            }
+
+            .ft-logo {
+                min-width: 80px;
+                width: 80px;
+                height: auto;
+                display: inline-block;
+            }
+
+            @media (min-width: 768px) {
+                .ft-logo {
+                    min-width: 110px;
+                    width: 110px;
+                }
+            }
+        </style>
 </body>
 
 </html>
