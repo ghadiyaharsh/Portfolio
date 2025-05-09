@@ -292,7 +292,7 @@ nav ul li a:hover {
     max-width: 100%;
     margin: 10px auto;
     line-height: 1.8;
-    text-align: justify; /* Left to right alignment with justified text */
+    text-align: center; /* Left to right alignment with justified text */
     font-weight: bold;
 }
 
@@ -327,25 +327,37 @@ nav ul li a:hover {
 }
 
 /* Footer Styles */
-footer {
-    background: linear-gradient(to bottom, #bfbfbf, #a9a9a9);
-    padding: 20px 10px;
+
+.footer {
+    padding: 20px;
+    background: linear-gradient(to bottom, #dcdcdc, #cfcfcf);
     text-align: center;
     color: #333;
     font-size: 1rem;
+    font-family: 'Poppins', Arial, sans-serif;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-footer p {
+.footer p {
     margin: 0;
-    font-family: 'Poppins', Arial, sans-serif;
-    font-weight: bold;
-    line-height: 1.5;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: center;
+    justify-content: ;
 }
 
-
-
-footer span#current-year {
+.footer span#current-year {
     font-weight: bold;
     color: #4f3e30;
+}
+
+.footer i.fa-heart {
+    color: #f4a261;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.footer i.fa-heart:hover {
+    transform: scale(1.2);
 }
